@@ -23,6 +23,10 @@
 		C455EABE1C321A0200E7E32E /* LRLocalizationApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C455EABD1C321A0200E7E32E /* LRLocalizationApi.m */; };
 		C462941F1C33870600746EE0 /* HUBaskViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C462941C1C33870600746EE0 /* HUBaskViewModel.m */; };
 		C46294201C33870600746EE0 /* HURequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C462941E1C33870600746EE0 /* HURequestViewModel.m */; };
+		C4C181831C39F68200E77307 /* MADAnnounceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181771C39F68200E77307 /* MADAnnounceCell.m */; };
+		C4C181861C39F68200E77307 /* LaunchTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C1817E1C39F68200E77307 /* LaunchTripViewController.m */; };
+		C4C181871C39F68200E77307 /* LaunchTripViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181811C39F68200E77307 /* LaunchTripViewModel.m */; };
+		C4C1818A1C39F71900E77307 /* LaunchTripModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181891C39F71900E77307 /* LaunchTripModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,14 @@
 		C462941C1C33870600746EE0 /* HUBaskViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUBaskViewModel.m; sourceTree = "<group>"; };
 		C462941D1C33870600746EE0 /* HURequestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HURequestViewModel.h; sourceTree = "<group>"; };
 		C462941E1C33870600746EE0 /* HURequestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HURequestViewModel.m; sourceTree = "<group>"; };
+		C4C181761C39F68200E77307 /* MADAnnounceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADAnnounceCell.h; sourceTree = "<group>"; };
+		C4C181771C39F68200E77307 /* MADAnnounceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADAnnounceCell.m; sourceTree = "<group>"; };
+		C4C1817D1C39F68200E77307 /* LaunchTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchTripViewController.h; sourceTree = "<group>"; };
+		C4C1817E1C39F68200E77307 /* LaunchTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchTripViewController.m; sourceTree = "<group>"; };
+		C4C181801C39F68200E77307 /* LaunchTripViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchTripViewModel.h; sourceTree = "<group>"; };
+		C4C181811C39F68200E77307 /* LaunchTripViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchTripViewModel.m; sourceTree = "<group>"; };
+		C4C181881C39F71900E77307 /* LaunchTripModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchTripModel.h; sourceTree = "<group>"; };
+		C4C181891C39F71900E77307 /* LaunchTripModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchTripModel.m; sourceTree = "<group>"; };
 		E1BF500DE752589A23C33A5F /* Pods-MVVMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMDemo/Pods-MVVMDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +171,7 @@
 		C455EA9D1C32101100E7E32E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C4C181711C39F68200E77307 /* LaunchTrip */,
 				C455EA9E1C32101100E7E32E /* Home */,
 				C455EA9F1C32101100E7E32E /* Main */,
 				C455EAA01C32101100E7E32E /* Other */,
@@ -262,6 +275,53 @@
 				C455EA7C1C320DA000E7E32E /* AppDelegate.m */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		C4C181711C39F68200E77307 /* LaunchTrip */ = {
+			isa = PBXGroup;
+			children = (
+				C4C181721C39F68200E77307 /* Model */,
+				C4C181731C39F68200E77307 /* View */,
+				C4C1817C1C39F68200E77307 /* ViewController */,
+				C4C1817F1C39F68200E77307 /* ViewModel */,
+			);
+			path = LaunchTrip;
+			sourceTree = "<group>";
+		};
+		C4C181721C39F68200E77307 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4C181881C39F71900E77307 /* LaunchTripModel.h */,
+				C4C181891C39F71900E77307 /* LaunchTripModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4C181731C39F68200E77307 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4C181761C39F68200E77307 /* MADAnnounceCell.h */,
+				C4C181771C39F68200E77307 /* MADAnnounceCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4C1817C1C39F68200E77307 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C4C1817D1C39F68200E77307 /* LaunchTripViewController.h */,
+				C4C1817E1C39F68200E77307 /* LaunchTripViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C4C1817F1C39F68200E77307 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4C181801C39F68200E77307 /* LaunchTripViewModel.h */,
+				C4C181811C39F68200E77307 /* LaunchTripViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FBF02AF35AD4C96562B32E59 /* Pods */ = {
@@ -431,9 +491,13 @@
 				C46294201C33870600746EE0 /* HURequestViewModel.m in Sources */,
 				C455EABE1C321A0200E7E32E /* LRLocalizationApi.m in Sources */,
 				C455EABB1C3219C400E7E32E /* DBMaster.m in Sources */,
+				C4C181831C39F68200E77307 /* MADAnnounceCell.m in Sources */,
+				C4C181871C39F68200E77307 /* LaunchTripViewModel.m in Sources */,
+				C4C1818A1C39F71900E77307 /* LaunchTripModel.m in Sources */,
 				C455EAB51C32162E00E7E32E /* LRUserViewModel.m in Sources */,
 				C455EA7A1C320DA000E7E32E /* main.m in Sources */,
 				C462941F1C33870600746EE0 /* HUBaskViewModel.m in Sources */,
+				C4C181861C39F68200E77307 /* LaunchTripViewController.m in Sources */,
 				C455EAAF1C32150C00E7E32E /* LRUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

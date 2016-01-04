@@ -11,7 +11,12 @@
 #import "LRUserInfoCell.h"
 #import "LRUser.h"
 #import "UIImageView+WebCache.h"
-//#import ""
+#import "LaunchTripViewController.h"
+#import "LaunchTripModel.h"
+#import "LaunchTripViewModel.h"
+
+
+
 #define kPlaceholder @"placeholder-85"
 #define cellIdentifier @"cellId"
 //static const NSString *cellIdentifier = @"cellId";
@@ -107,34 +112,43 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    return UITableViewAutomaticDimension;
-    NSString *resuseIdentifier = cellIdentifier;
+
+    return 70;
+    
+    
+    
+    
+    
+    //    return UITableViewAutomaticDimension;
+//    NSString *resuseIdentifier = cellIdentifier;
 //    dispatch_once_t onceToken;
 //    if (!_tempCell) {
 //        <#statements#>
 //    }
 //    
 //    
-    LRUserInfoCell *cell = [self.offscreenCells objectForKey:resuseIdentifier];
-    if (!cell) {
-        cell = [tableView dequeueReusableCellWithIdentifier:resuseIdentifier forIndexPath:indexPath];
-        [self.offscreenCells setObject:cell forKey:cellIdentifier];
-    }
-    cell.titleLabel.text = [_userViewModel nameAtIndexPath:indexPath];
-    NSString *urlStr = [_userViewModel imaUrlAtIndexPath:indexPath];
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:kPlaceholder]];
-    cell.contentLabel.text = [_userViewModel contentAtIndexPath:indexPath];
-    //是否修改约束
-    [cell setNeedsUpdateConstraints];
-    //修改约束
-    [cell updateConstraintsIfNeeded];
-    //UILayoutFittingCompressedSize
-    CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    return height + 1;
+//    LRUserInfoCell *cell = [self.offscreenCells objectForKey:resuseIdentifier];
+//    if (!cell) {
+//        cell = [tableView dequeueReusableCellWithIdentifier:resuseIdentifier forIndexPath:indexPath];
+//        [self.offscreenCells setObject:cell forKey:cellIdentifier];
+//    }
+//    cell.titleLabel.text = [_userViewModel nameAtIndexPath:indexPath];
+//    NSString *urlStr = [_userViewModel imaUrlAtIndexPath:indexPath];
+//    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:kPlaceholder]];
+//    cell.contentLabel.text = [_userViewModel contentAtIndexPath:indexPath];
+//    //是否修改约束
+//    [cell setNeedsUpdateConstraints];
+//    //修改约束
+//    [cell updateConstraintsIfNeeded];
+//    //UILayoutFittingCompressedSize
+//    CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+//    return height + 1;
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    LaunchTripModel *model = [[LaunchTripModel alloc] init];
+    LaunchTripViewModel *viewModel = [[LaunchTripViewModel alloc] initWithModel:model];
+    LaunchTripViewController *vc = [[LaunchTripViewController alloc] init];
+    vc.viewModel = viewModel;
+    [self.navigationController pushViewController:vc animated:YES];
 }
-
 @end

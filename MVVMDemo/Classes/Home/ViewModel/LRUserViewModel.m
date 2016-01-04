@@ -114,7 +114,7 @@
             [_imageUrls addObject: imageUrl];
             [_contents addObject: userDic[@"phone"]];
         }
-        
+        NSLog(@"_imageUrls:%@",_imageUrls);
         //一定记得回调
         if (success) {
             success(self);

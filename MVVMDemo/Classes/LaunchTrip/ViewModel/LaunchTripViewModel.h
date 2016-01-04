@@ -6,19 +6,26 @@
 //
 //
 
-#import "HURequestViewModel.h"
-#import <UIKit/UIKit.h>
+#import "HUBasicViewModel.h"
 
-@interface LaunchTripViewModel : HURequestViewModel
+@class HUUserViewModel;
+@interface LaunchTripViewModel : HUBasicViewModel
 
-@property (nonatomic, strong) NSString *theme;
-@property (nonatomic, strong) NSString *time;
-@property (nonatomic, strong) NSString *destination;
-@property (nonatomic, strong) NSString *funds;
-@property (nonatomic, strong) NSString *award;
+@property (nonatomic, copy) NSString *theme;
+@property (nonatomic, copy) NSString *time;
+@property (nonatomic, copy) NSString *destination;
+@property (nonatomic, copy) NSString *funds;
+@property (nonatomic, copy) NSString *award;
+@property (nonatomic, strong) NSMutableArray *awards;
+@property (nonatomic, copy) NSString *remark;//备注
+@property (nonatomic, strong) NSMutableArray *works;//作品
 
-//@property (nonatomic, strong) NSDictionary *dataDic;
+@property (nonatomic, readonly, strong) HUUserViewModel *userViewModel;
 
-- (void)textFieldValueDidChanged:(UITextField *)textField atIndexPath:(NSIndexPath *)indexPath;
+- (NSString *)titleForHeaderInSection:(NSInteger)section;
+- (NSString *)placeholderForRow:(NSInteger)row inSection:(NSInteger)section;
+
+- (void)textViewValueDidChanged:(NSString *)textValue;
+- (void)textFieldValueDidChanged:(NSString *)textValue forRow:(NSInteger)row inSection:(NSInteger)section;
 - (NSMutableDictionary *)save;
 @end

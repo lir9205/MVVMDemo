@@ -54,29 +54,29 @@
     LRUserViewModel *userViewModel = [[LRUserViewModel alloc] initWithModel:user];
     self.userViewModel = userViewModel;
     
-    self.userViewModel.loadType = HUViewModelLoadTypeLoadNew;
+//    self.userViewModel.loadType = HUViewModelLoadTypeLoadNew;
 
-    self.userViewModel.delegate = self;
+//    self.userViewModel.delegate = self;
     //[self.userViewModel fetchData];
     
-//    __weak typeof(self) weakself = self;
+    __weak typeof(self) weakself = self;
+    
+    [userViewModel fetchDataSuccess:^(HUBasicViewModel *viewModel) {
+        [weakself.tableView reloadData];
+    } failure:^(NSString *msg) {
+        
+    }];
+    
+}
+
+//- (void)viewModelDidFetchDataSucceed:(HUBaskViewModel *)viewModel {
+//    [self.tableView reloadData];
+//}
+//
+//- (void)viewModel:(HUBaskViewModel *)viewModel didFailedWithErrorMsg:(NSString *)error {
 //    
-//    [userViewModel fetchDataSuccess:^(HUBaskViewModel *viewModel) {
-//        [weakself.tableView reloadData];
-//    } failure:^(NSString *msg) {
-//        
-//    }];
-    
-}
-
-- (void)viewModelDidFetchDataSucceed:(HUBaskViewModel *)viewModel {
-    [self.tableView reloadData];
-}
-
-- (void)viewModel:(HUBaskViewModel *)viewModel didFailedWithErrorMsg:(NSString *)error {
-    
-    
-}
+//    
+//}
 
 
 

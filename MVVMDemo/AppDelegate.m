@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DBMaster.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-       
+      [[DBMaster sharedDBMaster] openDataBaseWithDBName:@"user"];
     return YES;
 }
 

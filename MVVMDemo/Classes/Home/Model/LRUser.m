@@ -7,7 +7,7 @@
 //
 
 #import "LRUser.h"
-#import "DBMaster.h"
+#import "LRDBMaster.h"
 #import "LRLocalizationProtocol.h"
 
 /*
@@ -27,16 +27,16 @@
 - (BOOL)save {
     LRUser *user = [self querry];
     if (user.userId.integerValue == _userId.integerValue) {
-        return [[DBMaster sharedDBMaster] executeUpdate:@"update user set name=?,introduce=?,gender=?,age=?,imgUrl=? where userId=?",self.name,self.introduce,@(self.gender),@(self.age),self.userId,self.imgUrl];
+        return [[LRDBMaster sharedDBMaster] executeUpdate:@"update user set name=?,introduce=?,gender=?,age=?,imgUrl=? where userId=?",self.name,self.introduce,@(self.gender),@(self.age),self.userId,self.imgUrl];
     }else{
-        return [[DBMaster sharedDBMaster] executeUpdate:@"insert into user(name,introduce,gender,age,imgUrl) values(?,?,?,?,?)",self.name,self.introduce,@(self.gender),@(self.age),self.imgUrl];
+        return [[LRDBMaster sharedDBMaster] executeUpdate:@"insert into user(name,introduce,gender,age,imgUrl) values(?,?,?,?,?)",self.name,self.introduce,@(self.gender),@(self.age),self.imgUrl];
     }
 }
 
 - (id)querry {
     NSString *sqlStr = [NSString stringWithFormat:@"select * from user where userId=%zd",self.userId.integerValue];
     
-    FMResultSet *resultSet = [[DBMaster sharedDBMaster] excuteQuerry:sqlStr];
+    FMResultSet *resultSet = [[LRDBMaster sharedDBMaster] excuteQuerry:sqlStr];
     LRUser *user = [[LRUser alloc] init];
     if (resultSet.next) {
         user.userId = @([resultSet intForColumn:@"userId"]);

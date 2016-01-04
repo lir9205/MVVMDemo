@@ -6,12 +6,15 @@
 //
 //
 
-#import "HURequestViewModel.h"
+#import "HUBasicViewModel.h"
 
 @interface LaunchTripModel : NSObject
-@property (nonatomic, strong) NSString *theme;
-@property (nonatomic, strong) NSString *time;
-@property (nonatomic, strong) NSString *destination;
-@property (nonatomic, strong) NSString *funds;
-@property (nonatomic, strong) NSString *award;
+@property (nonatomic, copy) NSString *theme;
+@property (nonatomic, copy) NSString *time;
+@property (nonatomic, copy) NSString *destination;
+@property (nonatomic, copy) NSString *funds;
+@property (nonatomic, copy) NSString *award;
+@property (nonatomic, strong) NSMutableArray *awards;
+@property (nonatomic, copy) NSString *remark;//备注
+@property (nonatomic, strong) NSMutableArray *works;//作品
 @end

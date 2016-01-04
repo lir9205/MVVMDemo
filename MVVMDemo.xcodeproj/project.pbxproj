@@ -19,14 +19,27 @@
 		C455EAAF1C32150C00E7E32E /* LRUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C455EAAE1C32150C00E7E32E /* LRUser.m */; };
 		C455EAB51C32162E00E7E32E /* LRUserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C455EAB41C32162E00E7E32E /* LRUserViewModel.m */; };
 		C455EAB81C32195600E7E32E /* LRNetworkingApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C455EAB71C32195600E7E32E /* LRNetworkingApi.m */; };
-		C455EABB1C3219C400E7E32E /* DBMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = C455EABA1C3219C400E7E32E /* DBMaster.m */; };
+		C455EABB1C3219C400E7E32E /* LRDBMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = C455EABA1C3219C400E7E32E /* LRDBMaster.m */; };
 		C455EABE1C321A0200E7E32E /* LRLocalizationApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C455EABD1C321A0200E7E32E /* LRLocalizationApi.m */; };
-		C462941F1C33870600746EE0 /* HUBaskViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C462941C1C33870600746EE0 /* HUBaskViewModel.m */; };
-		C46294201C33870600746EE0 /* HURequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C462941E1C33870600746EE0 /* HURequestViewModel.m */; };
 		C4C181831C39F68200E77307 /* MADAnnounceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181771C39F68200E77307 /* MADAnnounceCell.m */; };
 		C4C181861C39F68200E77307 /* LaunchTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C1817E1C39F68200E77307 /* LaunchTripViewController.m */; };
 		C4C181871C39F68200E77307 /* LaunchTripViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181811C39F68200E77307 /* LaunchTripViewModel.m */; };
 		C4C1818A1C39F71900E77307 /* LaunchTripModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181891C39F71900E77307 /* LaunchTripModel.m */; };
+		C4C181931C3A335500E77307 /* MARTextfieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181921C3A335500E77307 /* MARTextfieldCell.m */; };
+		C4C181961C3A338A00E77307 /* MAPlacehodelerTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181951C3A338A00E77307 /* MAPlacehodelerTextView.m */; };
+		C4C181991C3A4DA000E77307 /* HUBasicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181981C3A4DA000E77307 /* HUBasicViewModel.m */; };
+		C4C1819F1C3A4DEE00E77307 /* HUAddSportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C1819B1C3A4DEE00E77307 /* HUAddSportViewController.m */; };
+		C4C181A01C3A4DEE00E77307 /* HUEditSportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C1819D1C3A4DEE00E77307 /* HUEditSportViewController.m */; };
+		C4C181A11C3A4DEE00E77307 /* HUEditSportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4C1819E1C3A4DEE00E77307 /* HUEditSportViewController.xib */; };
+		C4C181A61C3A4E4F00E77307 /* HUEditViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181A31C3A4E4F00E77307 /* HUEditViewModel.m */; };
+		C4C181A71C3A4E4F00E77307 /* HUUserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181A51C3A4E4F00E77307 /* HUUserViewModel.m */; };
+		C4C181AA1C3A4F4F00E77307 /* HUUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181A91C3A4F4F00E77307 /* HUUser.m */; };
+		C4C181AE1C3A501B00E77307 /* HULocalizationApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181AC1C3A501B00E77307 /* HULocalizationApi.m */; };
+		C4C181B41C3A505200E77307 /* HUNetworkingApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181B31C3A505200E77307 /* HUNetworkingApi.m */; };
+		C4C181B71C3A513300E77307 /* DBMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181B61C3A513300E77307 /* DBMaster.m */; };
+		C4C181BD1C3A687D00E77307 /* MADPickImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181BC1C3A687D00E77307 /* MADPickImageView.m */; };
+		C4C181EE1C3A6C5400E77307 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C181ED1C3A6C5400E77307 /* UIImage+Extension.m */; };
+		C4C181F01C3A71FC00E77307 /* register_add_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C181EF1C3A71FC00E77307 /* register_add_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,23 +76,48 @@
 		C455EAB41C32162E00E7E32E /* LRUserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRUserViewModel.m; sourceTree = "<group>"; };
 		C455EAB61C32195600E7E32E /* LRNetworkingApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRNetworkingApi.h; sourceTree = "<group>"; };
 		C455EAB71C32195600E7E32E /* LRNetworkingApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRNetworkingApi.m; sourceTree = "<group>"; };
-		C455EAB91C3219C400E7E32E /* DBMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMaster.h; sourceTree = "<group>"; };
-		C455EABA1C3219C400E7E32E /* DBMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMaster.m; sourceTree = "<group>"; };
+		C455EAB91C3219C400E7E32E /* LRDBMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRDBMaster.h; sourceTree = "<group>"; };
+		C455EABA1C3219C400E7E32E /* LRDBMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRDBMaster.m; sourceTree = "<group>"; };
 		C455EABC1C321A0200E7E32E /* LRLocalizationApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLocalizationApi.h; sourceTree = "<group>"; };
 		C455EABD1C321A0200E7E32E /* LRLocalizationApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLocalizationApi.m; sourceTree = "<group>"; };
 		C455EABF1C321A5400E7E32E /* LRLocalizationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLocalizationProtocol.h; sourceTree = "<group>"; };
-		C462941B1C33870600746EE0 /* HUBaskViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUBaskViewModel.h; sourceTree = "<group>"; };
-		C462941C1C33870600746EE0 /* HUBaskViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUBaskViewModel.m; sourceTree = "<group>"; };
-		C462941D1C33870600746EE0 /* HURequestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HURequestViewModel.h; sourceTree = "<group>"; };
-		C462941E1C33870600746EE0 /* HURequestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HURequestViewModel.m; sourceTree = "<group>"; };
 		C4C181761C39F68200E77307 /* MADAnnounceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADAnnounceCell.h; sourceTree = "<group>"; };
 		C4C181771C39F68200E77307 /* MADAnnounceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADAnnounceCell.m; sourceTree = "<group>"; };
 		C4C1817D1C39F68200E77307 /* LaunchTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchTripViewController.h; sourceTree = "<group>"; };
 		C4C1817E1C39F68200E77307 /* LaunchTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchTripViewController.m; sourceTree = "<group>"; };
-		C4C181801C39F68200E77307 /* LaunchTripViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchTripViewModel.h; sourceTree = "<group>"; };
-		C4C181811C39F68200E77307 /* LaunchTripViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchTripViewModel.m; sourceTree = "<group>"; };
+		C4C181801C39F68200E77307 /* LaunchTripViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchTripViewModel.h; path = ../ViewModel/LaunchTripViewModel.h; sourceTree = "<group>"; };
+		C4C181811C39F68200E77307 /* LaunchTripViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchTripViewModel.m; path = ../ViewModel/LaunchTripViewModel.m; sourceTree = "<group>"; };
 		C4C181881C39F71900E77307 /* LaunchTripModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchTripModel.h; sourceTree = "<group>"; };
 		C4C181891C39F71900E77307 /* LaunchTripModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchTripModel.m; sourceTree = "<group>"; };
+		C4C181911C3A335500E77307 /* MARTextfieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MARTextfieldCell.h; sourceTree = "<group>"; };
+		C4C181921C3A335500E77307 /* MARTextfieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARTextfieldCell.m; sourceTree = "<group>"; };
+		C4C181941C3A338A00E77307 /* MAPlacehodelerTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPlacehodelerTextView.h; sourceTree = "<group>"; };
+		C4C181951C3A338A00E77307 /* MAPlacehodelerTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPlacehodelerTextView.m; sourceTree = "<group>"; };
+		C4C181971C3A4DA000E77307 /* HUBasicViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUBasicViewModel.h; sourceTree = "<group>"; };
+		C4C181981C3A4DA000E77307 /* HUBasicViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUBasicViewModel.m; sourceTree = "<group>"; };
+		C4C1819A1C3A4DEE00E77307 /* HUAddSportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUAddSportViewController.h; path = ../ViewModel/HUAddSportViewController.h; sourceTree = "<group>"; };
+		C4C1819B1C3A4DEE00E77307 /* HUAddSportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUAddSportViewController.m; path = ../ViewModel/HUAddSportViewController.m; sourceTree = "<group>"; };
+		C4C1819C1C3A4DEE00E77307 /* HUEditSportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUEditSportViewController.h; path = ../ViewModel/HUEditSportViewController.h; sourceTree = "<group>"; };
+		C4C1819D1C3A4DEE00E77307 /* HUEditSportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUEditSportViewController.m; path = ../ViewModel/HUEditSportViewController.m; sourceTree = "<group>"; };
+		C4C1819E1C3A4DEE00E77307 /* HUEditSportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HUEditSportViewController.xib; path = ../ViewModel/HUEditSportViewController.xib; sourceTree = "<group>"; };
+		C4C181A21C3A4E4F00E77307 /* HUEditViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUEditViewModel.h; path = ../HUEditViewModel.h; sourceTree = "<group>"; };
+		C4C181A31C3A4E4F00E77307 /* HUEditViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUEditViewModel.m; path = ../HUEditViewModel.m; sourceTree = "<group>"; };
+		C4C181A41C3A4E4F00E77307 /* HUUserViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUUserViewModel.h; path = ../HUUserViewModel.h; sourceTree = "<group>"; };
+		C4C181A51C3A4E4F00E77307 /* HUUserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUUserViewModel.m; path = ../HUUserViewModel.m; sourceTree = "<group>"; };
+		C4C181A81C3A4F4F00E77307 /* HUUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUUser.h; sourceTree = "<group>"; };
+		C4C181A91C3A4F4F00E77307 /* HUUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUUser.m; sourceTree = "<group>"; };
+		C4C181AB1C3A501B00E77307 /* HULocalizationApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HULocalizationApi.h; sourceTree = "<group>"; };
+		C4C181AC1C3A501B00E77307 /* HULocalizationApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HULocalizationApi.m; sourceTree = "<group>"; };
+		C4C181AD1C3A501B00E77307 /* HULocalizationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HULocalizationProtocol.h; sourceTree = "<group>"; };
+		C4C181B21C3A505200E77307 /* HUNetworkingApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUNetworkingApi.h; sourceTree = "<group>"; };
+		C4C181B31C3A505200E77307 /* HUNetworkingApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUNetworkingApi.m; sourceTree = "<group>"; };
+		C4C181B51C3A513300E77307 /* DBMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMaster.h; sourceTree = "<group>"; };
+		C4C181B61C3A513300E77307 /* DBMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMaster.m; sourceTree = "<group>"; };
+		C4C181BB1C3A687D00E77307 /* MADPickImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADPickImageView.h; sourceTree = "<group>"; };
+		C4C181BC1C3A687D00E77307 /* MADPickImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADPickImageView.m; sourceTree = "<group>"; };
+		C4C181EC1C3A6C5400E77307 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		C4C181ED1C3A6C5400E77307 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		C4C181EF1C3A71FC00E77307 /* register_add_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "register_add_icon@2x.png"; sourceTree = "<group>"; };
 		E1BF500DE752589A23C33A5F /* Pods-MVVMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMDemo/Pods-MVVMDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +151,7 @@
 		C455EA6B1C320DA000E7E32E = {
 			isa = PBXGroup;
 			children = (
+				C4C181EF1C3A71FC00E77307 /* register_add_icon@2x.png */,
 				C455EA761C320DA000E7E32E /* MVVMDemo */,
 				C455EA901C320DA000E7E32E /* MVVMDemoTests */,
 				C455EA751C320DA000E7E32E /* Products */,
@@ -171,9 +210,9 @@
 		C455EA9D1C32101100E7E32E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C455EA9F1C32101100E7E32E /* Main */,
 				C4C181711C39F68200E77307 /* LaunchTrip */,
 				C455EA9E1C32101100E7E32E /* Home */,
-				C455EA9F1C32101100E7E32E /* Main */,
 				C455EAA01C32101100E7E32E /* Other */,
 				C455EAA11C32101100E7E32E /* Util */,
 			);
@@ -212,10 +251,17 @@
 			children = (
 				C455EAB61C32195600E7E32E /* LRNetworkingApi.h */,
 				C455EAB71C32195600E7E32E /* LRNetworkingApi.m */,
-				C455EAB91C3219C400E7E32E /* DBMaster.h */,
-				C455EABA1C3219C400E7E32E /* DBMaster.m */,
+				C455EAB91C3219C400E7E32E /* LRDBMaster.h */,
+				C455EABA1C3219C400E7E32E /* LRDBMaster.m */,
+				C4C181B51C3A513300E77307 /* DBMaster.h */,
+				C4C181B61C3A513300E77307 /* DBMaster.m */,
 				C455EABF1C321A5400E7E32E /* LRLocalizationProtocol.h */,
 				C455EABC1C321A0200E7E32E /* LRLocalizationApi.h */,
+				C4C181AB1C3A501B00E77307 /* HULocalizationApi.h */,
+				C4C181B21C3A505200E77307 /* HUNetworkingApi.h */,
+				C4C181B31C3A505200E77307 /* HUNetworkingApi.m */,
+				C4C181AC1C3A501B00E77307 /* HULocalizationApi.m */,
+				C4C181AD1C3A501B00E77307 /* HULocalizationProtocol.h */,
 				C455EABD1C321A0200E7E32E /* LRLocalizationApi.m */,
 			);
 			path = Util;
@@ -251,10 +297,8 @@
 		C455EAA71C32119F00E7E32E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C462941B1C33870600746EE0 /* HUBaskViewModel.h */,
-				C462941C1C33870600746EE0 /* HUBaskViewModel.m */,
-				C462941D1C33870600746EE0 /* HURequestViewModel.h */,
-				C462941E1C33870600746EE0 /* HURequestViewModel.m */,
+				C4C181971C3A4DA000E77307 /* HUBasicViewModel.h */,
+				C4C181981C3A4DA000E77307 /* HUBasicViewModel.m */,
 				C455EAB31C32162E00E7E32E /* LRUserViewModel.h */,
 				C455EAB41C32162E00E7E32E /* LRUserViewModel.m */,
 			);
@@ -264,6 +308,8 @@
 		C455EAA81C3211BC00E7E32E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				C4C181EC1C3A6C5400E77307 /* UIImage+Extension.h */,
+				C4C181ED1C3A6C5400E77307 /* UIImage+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -283,7 +329,6 @@
 				C4C181721C39F68200E77307 /* Model */,
 				C4C181731C39F68200E77307 /* View */,
 				C4C1817C1C39F68200E77307 /* ViewController */,
-				C4C1817F1C39F68200E77307 /* ViewModel */,
 			);
 			path = LaunchTrip;
 			sourceTree = "<group>";
@@ -291,6 +336,8 @@
 		C4C181721C39F68200E77307 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C4C181A81C3A4F4F00E77307 /* HUUser.h */,
+				C4C181A91C3A4F4F00E77307 /* HUUser.m */,
 				C4C181881C39F71900E77307 /* LaunchTripModel.h */,
 				C4C181891C39F71900E77307 /* LaunchTripModel.m */,
 			);
@@ -300,8 +347,14 @@
 		C4C181731C39F68200E77307 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C4C181BB1C3A687D00E77307 /* MADPickImageView.h */,
+				C4C181BC1C3A687D00E77307 /* MADPickImageView.m */,
 				C4C181761C39F68200E77307 /* MADAnnounceCell.h */,
 				C4C181771C39F68200E77307 /* MADAnnounceCell.m */,
+				C4C181911C3A335500E77307 /* MARTextfieldCell.h */,
+				C4C181921C3A335500E77307 /* MARTextfieldCell.m */,
+				C4C181941C3A338A00E77307 /* MAPlacehodelerTextView.h */,
+				C4C181951C3A338A00E77307 /* MAPlacehodelerTextView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -309,19 +362,45 @@
 		C4C1817C1C39F68200E77307 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C4C1817D1C39F68200E77307 /* LaunchTripViewController.h */,
-				C4C1817E1C39F68200E77307 /* LaunchTripViewController.m */,
+				C4C181BA1C3A59C600E77307 /* 编辑奖励 */,
+				C4C181B91C3A597C00E77307 /* 选择奖励 */,
+				C4C181B81C3A594A00E77307 /* 发布旅拍 */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		C4C1817F1C39F68200E77307 /* ViewModel */ = {
+		C4C181B81C3A594A00E77307 /* 发布旅拍 */ = {
 			isa = PBXGroup;
 			children = (
+				C4C1817D1C39F68200E77307 /* LaunchTripViewController.h */,
+				C4C1817E1C39F68200E77307 /* LaunchTripViewController.m */,
 				C4C181801C39F68200E77307 /* LaunchTripViewModel.h */,
 				C4C181811C39F68200E77307 /* LaunchTripViewModel.m */,
 			);
-			path = ViewModel;
+			name = "发布旅拍";
+			sourceTree = "<group>";
+		};
+		C4C181B91C3A597C00E77307 /* 选择奖励 */ = {
+			isa = PBXGroup;
+			children = (
+				C4C1819A1C3A4DEE00E77307 /* HUAddSportViewController.h */,
+				C4C1819B1C3A4DEE00E77307 /* HUAddSportViewController.m */,
+				C4C181A41C3A4E4F00E77307 /* HUUserViewModel.h */,
+				C4C181A51C3A4E4F00E77307 /* HUUserViewModel.m */,
+			);
+			name = "选择奖励";
+			sourceTree = "<group>";
+		};
+		C4C181BA1C3A59C600E77307 /* 编辑奖励 */ = {
+			isa = PBXGroup;
+			children = (
+				C4C1819C1C3A4DEE00E77307 /* HUEditSportViewController.h */,
+				C4C1819D1C3A4DEE00E77307 /* HUEditSportViewController.m */,
+				C4C1819E1C3A4DEE00E77307 /* HUEditSportViewController.xib */,
+				C4C181A21C3A4E4F00E77307 /* HUEditViewModel.h */,
+				C4C181A31C3A4E4F00E77307 /* HUEditViewModel.m */,
+			);
+			name = "编辑奖励";
 			sourceTree = "<group>";
 		};
 		FBF02AF35AD4C96562B32E59 /* Pods */ = {
@@ -416,7 +495,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C181A11C3A4DEE00E77307 /* HUEditSportViewController.xib in Resources */,
 				C455EA831C320DA000E7E32E /* Main.storyboard in Resources */,
+				C4C181F01C3A71FC00E77307 /* register_add_icon@2x.png in Resources */,
 				C455EA881C320DA000E7E32E /* LaunchScreen.xib in Resources */,
 				C455EA851C320DA000E7E32E /* Images.xcassets in Resources */,
 			);
@@ -486,19 +567,30 @@
 			files = (
 				C455EAAC1C3213AD00E7E32E /* LRUserInfoCell.m in Sources */,
 				C455EA801C320DA000E7E32E /* ViewController.m in Sources */,
+				C4C181A01C3A4DEE00E77307 /* HUEditSportViewController.m in Sources */,
 				C455EA7D1C320DA000E7E32E /* AppDelegate.m in Sources */,
 				C455EAB81C32195600E7E32E /* LRNetworkingApi.m in Sources */,
-				C46294201C33870600746EE0 /* HURequestViewModel.m in Sources */,
 				C455EABE1C321A0200E7E32E /* LRLocalizationApi.m in Sources */,
-				C455EABB1C3219C400E7E32E /* DBMaster.m in Sources */,
+				C4C181931C3A335500E77307 /* MARTextfieldCell.m in Sources */,
+				C4C181EE1C3A6C5400E77307 /* UIImage+Extension.m in Sources */,
+				C4C181AA1C3A4F4F00E77307 /* HUUser.m in Sources */,
+				C4C181961C3A338A00E77307 /* MAPlacehodelerTextView.m in Sources */,
+				C4C181A71C3A4E4F00E77307 /* HUUserViewModel.m in Sources */,
+				C455EABB1C3219C400E7E32E /* LRDBMaster.m in Sources */,
+				C4C181B41C3A505200E77307 /* HUNetworkingApi.m in Sources */,
+				C4C181991C3A4DA000E77307 /* HUBasicViewModel.m in Sources */,
 				C4C181831C39F68200E77307 /* MADAnnounceCell.m in Sources */,
 				C4C181871C39F68200E77307 /* LaunchTripViewModel.m in Sources */,
 				C4C1818A1C39F71900E77307 /* LaunchTripModel.m in Sources */,
+				C4C181B71C3A513300E77307 /* DBMaster.m in Sources */,
+				C4C1819F1C3A4DEE00E77307 /* HUAddSportViewController.m in Sources */,
+				C4C181AE1C3A501B00E77307 /* HULocalizationApi.m in Sources */,
 				C455EAB51C32162E00E7E32E /* LRUserViewModel.m in Sources */,
 				C455EA7A1C320DA000E7E32E /* main.m in Sources */,
-				C462941F1C33870600746EE0 /* HUBaskViewModel.m in Sources */,
 				C4C181861C39F68200E77307 /* LaunchTripViewController.m in Sources */,
+				C4C181BD1C3A687D00E77307 /* MADPickImageView.m in Sources */,
 				C455EAAF1C32150C00E7E32E /* LRUser.m in Sources */,
+				C4C181A61C3A4E4F00E77307 /* HUEditViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

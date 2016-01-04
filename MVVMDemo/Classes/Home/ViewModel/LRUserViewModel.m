@@ -7,10 +7,11 @@
 //
 
 #import "LRUserViewModel.h"
-#import "LRLocalizationApi.h"
+#import "HULocalizationApi.h"
 #import "LRUser.h"
-#import "LRNetworkingApi.h"
-#import "LRUserInfoCell.h"
+#import "HUNetworkingApi.h"
+
+//#import "LRUserInfoCell.h"
 #import "UIImageView+webcache.h"
 
 
@@ -62,7 +63,7 @@
 }
 
 - (void)fetchData {
-    [self fetchDataSuccess:^(HUBaskViewModel *viewModel) {
+    [self fetchDataSuccess:^(HUBasicViewModel *viewModel) {
         if ([self.delegate respondsToSelector:@selector(viewModelDidFetchDataSucceed:)]) {
             [self.delegate viewModelDidFetchDataSucceed:self];
         }
@@ -72,24 +73,24 @@
     }];
 }
 
-- (void)fetchDataSuccess:(void (^)(HUBaskViewModel *))success failure:(void (^)(NSString *))failure {
+- (void)fetchDataSuccess:(void (^)(id))success failure:(void (^)(NSString *))failure {
     [super fetchDataSuccess:success failure:failure];
     //判断网络
     BOOL isnetworkingReachable = self.networkingReachable;
     //本地取
     if (!isnetworkingReachable) {
-        self.model = [LRLocalizationApi querry:self.model];
-        if (self.model) {
-            success(self);
-        } else {
-            failure(@"没有信息");
-        }
-        return;
+//        self.model = [[HULocalizationApi querryAll:self.model] lastObject];
+//        if (self.model) {
+//            success(self);
+//        } else {
+//            failure(@"没有信息");
+//        }
+//        return;
     }
     NSString *url = @"FriendsServlet";
     LRUser *user = (LRUser *)self.model;
     NSDictionary *parameters = @{@"user_id":user.userId,@"tag":@"attens"};
-    [LRNetworkingApi POST:url parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+    [HUNetworkingApi POST:url parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
         //NSLog(@"responseObj:%@",responseObject);
         NSArray * resultArray = responseObject[@"friends"];
         

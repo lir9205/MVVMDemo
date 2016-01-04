@@ -1,23 +1,26 @@
 //
 //  DBMaster.h
-//  
+//  FMDBTest
 //
-//  Created by 李芮 on 15/12/29.
-//
+//  Created by mac on 15/12/23.
+//  Copyright © 2015年 jinhuadiqigan. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import <FMDB/FMDB.h>
+#import <FMDB/fmdb.h>
 
-
+@class HUUser;
 @interface DBMaster : NSObject
 
 + (instancetype)sharedDBMaster;
+- (void)openDataBaseWithDBName:(NSString *)dbName ;
 
-- (void)openDBWithDBName:(NSString *)dbName;
-- (BOOL)executeUpdate:(NSString *)sql,...;
-- (FMResultSet *)excuteQuerry:(NSString *)sql;
+- (BOOL)runSql:(NSString*)sql, ...;
+
+- (FMResultSet *)query:(NSString*)sql;
 
 
+//- (void)addUser:(HUUser *)user;
+//- (NSArray *)getAllUsers;
 
 @end

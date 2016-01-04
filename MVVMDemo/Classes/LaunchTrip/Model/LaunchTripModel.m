@@ -18,6 +18,9 @@
         _destination = @"选择旅拍目的地";
         _funds = @"填写需要募集的资金";
         _award = @"选择相应的奖励";
+//        _awards = [[NSMutableArray alloc] init];
+//        _works = [[NSMutableArray alloc] init];
+        _remark = @"请填写旅拍备注";
     }
     return self;
 }

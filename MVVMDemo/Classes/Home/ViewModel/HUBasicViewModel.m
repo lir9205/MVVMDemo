@@ -6,15 +6,26 @@
 //  Copyright © 2015年 jinhuadiqigan. All rights reserved.
 //
 
-#import "HUBaskViewModel.h"
+#import "HUBasicViewModel.h"
 
-@implementation HUBaskViewModel
+@interface HUBasicViewModel ()
+
+@property (nonatomic, strong) id model;
+
+@property (nonatomic, copy) void(^successBlock)(id viewModel);
+
+@property (nonatomic, copy) void(^failedBlock)(id msg);
+
+@end
+
+@implementation HUBasicViewModel
 
 - (instancetype)initWithModel:(id)model {
     self = [super init];
     if (self == nil) return nil;
     
     _model = model;
+    _networkingReachable = YES;
     
     [self addObserver:self forKeyPath:@"loadType" options:NSKeyValueObservingOptionNew context:nil];
     
@@ -22,8 +33,12 @@
 
 }
 
+- (instancetype)init {
+    return [self initWithModel:nil];
+}
+
 - (void)dealloc {
-    NSLog(@"%s,----- %@", sel_getName(_cmd), self);
+
     [self removeObserver:self forKeyPath:@"loadType"];
 }
 
@@ -40,7 +55,7 @@
     }
 }
 
-- (void)fetchDataSuccess:(void(^)(HUBaskViewModel *viewModel))success
+- (void)fetchDataSuccess:(void(^)(id viewModel))success
                  failure:(void(^)(NSString *msg))failure {
     if (!self.successBlock) {
         self.successBlock = [success copy];
@@ -48,6 +63,7 @@
     if (!self.failedBlock) {
         self.failedBlock = [failure copy];
     }
+    
 }
 
 - (void)fetchData {};

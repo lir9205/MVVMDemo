@@ -6,11 +6,11 @@
 //
 //
 
-#import "HURequestViewModel.h"
+#import "HUBasicViewModel.h"
 
 
 
-@interface LRUserViewModel : HURequestViewModel
+@interface LRUserViewModel : HUBasicViewModel
 
 
 
